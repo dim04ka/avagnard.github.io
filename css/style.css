@@ -1410,7 +1410,161 @@
 
         }
           }
-@font-face {@import "portf.css";
+.usluga {
+  padding: 50px 0;
+}
+.usluga-hlebnie{
+    color: #3b3b3b;
+    font-family: "Proxima Nova";
+    font-size: 1.1875rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+.usluga-hlebnie__link {
+      color: #787777;
+      text-decoration-line: none;
+    }
+.usluga-content {
+    display: flex;
+  }
+.usluga-content__gallery {
+      width: 50%;
+    }
+.usluga-content__text {
+      width: 50%;
+      padding-left: 50px;
+    }
+.usluga-content__disc {
+      color: #969696;
+      font-family: "GilroySemiBold";
+      font-size: 1.1875rem;
+      margin-bottom: 20px;
+    }
+.usluga-content__btn {
+      width: 352px;
+      height: 70px;
+      background-color: #df822a;
+      color: #ffffff;
+      font-family: Gilroy;
+      font-size: 1.125rem;
+      letter-spacing: 0.1125rem;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      -webkit-appearance: none
+    }
+@media(max-width: 768px) {
+
+    .usluga-content__btn {
+        font-size: 1.0625rem;
+        width: 300px;
+        height: 62px
+    }
+      }
+@media(max-width: 480px) {
+
+    .usluga-content__btn {
+        font-size: 0.9375rem;
+        width: 279px;
+        height: 48px;
+        display: block;
+        margin: 0 auto
+    }
+      }
+.usluga-content__btn span {
+        position: absolute;
+        right: -135px;
+        color: #df782e;
+        font-family: Gilroy;
+        font-size: 1.125rem
+      }
+@media(max-width: 768px) {
+
+      .usluga-content__btn span {
+          right: -100px
+      }
+        }
+@media(max-width: 480px) {
+
+      .usluga-content__btn span {
+          width: 100%;
+          left: -30px;
+          bottom: -50px
+      }
+        }
+.usluga-content__btn span::before {
+          content: "";
+          width: 100px;
+          height: 1px;
+          display: inline-block;
+          background: #292929;
+          position: relative;
+          top: -6px;
+          margin-right: 10px
+        }
+@media(max-width: 768px) {
+
+        .usluga-content__btn span::before {
+            width: 50px
+        }
+
+          }
+@media(max-width: 480px) {
+
+        .usluga-content__btn span::before {
+            width: 30px;
+            transform: rotate(90deg);
+            right: -48px;
+            top: -40px
+        }
+        
+          }
+.gallery {
+  display: flex;
+}
+.gallery-big {
+    width: 382px;
+    height: 376px;
+    margin-right: 12px;
+  }
+.gallery-big img {
+      
+    }
+.gallery-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+.gallery-small img:first-child {
+      margin-bottom: 12px;
+    }
+.text-wrap {
+
+  margin-bottom: 20px;
+}
+.text-wrap-title {
+    color: #222222;
+    font-family: "Proxima Nova";
+    font-size: 1.5625rem;
+    line-height: normal;
+  }
+.text-wrap-title span {
+      color: #df822a;
+    }
+.text-wrap-title:first-child{
+    margin-bottom: 20px;
+  }
+.text-wrap-title:nth-child(2){
+    margin-bottom: 10px;
+  }
+.text-wrap:after {
+    content: "";
+    width: 56px;
+    height: 5px;
+    background-color: #e29329;
+    display: block;
+  }
+@font-face {
   font-family: "GilroyBlack";
   src: url("../fonts/Gilroy-Black.ttf") format("truetype"); }
 @font-face {
@@ -1428,6 +1582,9 @@
 @font-face {
   font-family: "GilroyRegular";
   src: url("../fonts/Gilroy-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Black.woff") format("truetype"); }
 :root {
     --default: Gilroy, sans-serif;
     --gray: #828282;

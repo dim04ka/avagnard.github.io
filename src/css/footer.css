@@ -107,6 +107,7 @@
       cursor: pointer;
       position: relative;
       margin-bottom: 40px;
+      -webkit-appearance: none;
 
       @media(max-width: 767px) {
         margin-bottom: 80px;
@@ -258,7 +259,7 @@
       max-width: 400px;
       background: #393939;
       border: none;
-      border-bottom: 8px solid #c0c0c0;
+      border-bottom: 1px solid #c0c0c0;
       color: #918f8f;
       font-family: Gilroy;
       font-size: 17px;
@@ -301,11 +302,11 @@
         &::before {
           content: "";
           width: 100px;
-          height: 6px;
+          height: 1px;
           display: inline-block;
           background: white;
           position: relative;
-          top: -3px;
+          top: -5px;
           margin-right: 10px;
 
           @media(max-width:767px){

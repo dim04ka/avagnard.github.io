@@ -214,25 +214,23 @@
 
   &:before {
     position: relative;
-    top: 40px;
-    left: 120px; 
-    content: "";
-    position: relative;
-    background-image: url(../src/img/usl.png);
-    width: 71px;
+    top: 30px;
+    left: 120px;
+    content: "У С Л У Г И";
+    width: 20px;
     height: 597px;
     display: block;
-    background-repeat: no-repeat;
+    color: #d58621;
+    font-weight: bold;
+    font-size: 115px;
+    font-family: "GilroyBlack";
+    line-height: 104px;
 
     @media(max-width: 1023px){
-      width: 106px;
-      height: 1125px;
-      display: block;
-      background-repeat: no-repeat;
-      background-size: contain;
       position: relative;
       top: 25px;
       left: 70px;
+      line-height: 160px;
     }
 
   }

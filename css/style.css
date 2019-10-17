@@ -239,7 +239,8 @@
       border: none;
       margin-bottom: 80px;
       cursor: pointer;
-      position: relative
+      position: relative;
+      -webkit-appearance: none
     }
 @media(max-width: 768px) {
 
@@ -277,17 +278,17 @@
       .header-main__btn span {
           width: 100%;
           left: -30px;
-          bottom: -70px
+          bottom: -50px
       }
         }
 .header-main__btn span::before {
           content: "";
           width: 100px;
-          height: 6px;
+          height: 1px;
           display: inline-block;
           background: white;
           position: relative;
-          top: -3px;
+          top: -6px;
           margin-right: 10px
         }
 @media(max-width: 768px) {
@@ -303,7 +304,7 @@
             width: 30px;
             transform: rotate(90deg);
             right: -48px;
-            top: -52px
+            top: -40px
         }
         
           }
@@ -512,19 +513,21 @@
   }
     }
 .about__disc1:before {
-      content: "";
-      background-image: url(../src/img/about.png);
-      width: 272px;
-      height: 63px;
+      content: "О НАС";
       display: block;
       position: relative;
-      top: -50px
+      top: -50px;
+      font-size: 5.1875rem;
+      font-family: "GilroyBlack";
+      letter-spacing: 0.4375rem;
+      color: #2f2f2f
 
     }
 @media(max-width: 480px){
 
     .about__disc1:before {
-        top: -25px
+        top: -25px;
+        font-size: 3.125rem
 
     }
       }
@@ -863,27 +866,25 @@
   }
 .r-block:before {
     position: relative;
-    top: 40px;
-    left: 120px; 
-    content: "";
-    position: relative;
-    background-image: url(../src/img/usl.png);
-    width: 71px;
+    top: 30px;
+    left: 120px;
+    content: "У С Л У Г И";
+    width: 20px;
     height: 597px;
     display: block;
-    background-repeat: no-repeat
+    color: #d58621;
+    font-weight: bold;
+    font-size: 7.1875rem;
+    font-family: "GilroyBlack";
+    line-height: 6.5rem
 
   }
 @media(max-width: 1023px){
 .r-block:before {
-      width: 106px;
-      height: 1125px;
-      display: block;
-      background-repeat: no-repeat;
-      background-size: contain;
       position: relative;
       top: 25px;
-      left: 70px
+      left: 70px;
+      line-height: 10rem
 
   }
     }
@@ -1173,7 +1174,8 @@
       border: none;
       cursor: pointer;
       position: relative;
-      margin-bottom: 40px
+      margin-bottom: 40px;
+      -webkit-appearance: none
     }
 @media(max-width: 767px) {
 
@@ -1342,7 +1344,7 @@
       max-width: 400px;
       background: #393939;
       border: none;
-      border-bottom: 8px solid #c0c0c0;
+      border-bottom: 1px solid #c0c0c0;
       color: #918f8f;
       font-family: Gilroy;
       font-size: 1.0625rem;
@@ -1390,11 +1392,11 @@
 .footer-form__wrap span::before {
           content: "";
           width: 100px;
-          height: 6px;
+          height: 1px;
           display: inline-block;
           background: white;
           position: relative;
-          top: -3px;
+          top: -5px;
           margin-right: 10px
 
         }

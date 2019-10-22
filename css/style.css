@@ -64,7 +64,7 @@
 .header-bg {
     background-size: 330px 150px;
     background-position: 50% 102%;
-    padding-bottom: 235px
+    padding-bottom: 110px
 }
   }
 .header-top {
@@ -121,7 +121,8 @@
       color: #fefefe;
       font-family: Gilroy;
       font-size: 1.0625rem;
-      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
       transition: all .3s
     }
 .header-top__phone a:hover {
@@ -150,7 +151,8 @@
       color: #fefefe;
       font-family: Gilroy;
       font-size: 1.1875rem;
-      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
       letter-spacing: 0.07563rem;
       transition: all .3s
     }
@@ -269,7 +271,8 @@
     .header-main__btn {
         font-size: 1.0625rem;
         width: 300px;
-        height: 62px
+        height: 62px;
+        padding-top: 20px
     }
       }
 @media(max-width: 480px) {
@@ -278,8 +281,7 @@
         font-size: 0.9375rem;
         width: 279px;
         height: 48px;
-        display: block;
-        margin: 0 auto
+        padding-top: 15px
     }
       }
 .header-main__btn span {
@@ -1004,7 +1006,8 @@
   }
     }
 .portf__content-item a {
-      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
     }
 .portf__content-item a .img {
         width: 347px;
@@ -1067,7 +1070,8 @@
     margin-left: 50px;
     color: #313131;
     font-family: Gilroy;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
     letter-spacing: 0.165rem;
     transition: all .3s
   }
@@ -1091,7 +1095,8 @@
   }
 .usluga-hlebnie__link {
       color: #787777;
-      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
       transition: all .3s
     }
 .usluga-hlebnie__link:hover {
@@ -1106,6 +1111,12 @@
       display: flex;
       flex-direction: column;
       align-items: center
+  }
+    }
+@media(max-width: 480px){
+  
+  .usluga-content {
+      padding-bottom: 30px
   }
     }
 .usluga-content__gallery {
@@ -1237,8 +1248,18 @@
 .gallery-big {
     width: 382px;
     height: 376px;
-    margin-right: 12px
+    margin-right: 12px;
+    position: relative
   }
+.gallery-big::before {
+      content: "";
+      background-image: url("../src/img/usluga/loop.png");
+      width: 37px;
+      height: 37px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
 @media(max-width: 1200px){
 
   .gallery-big {
@@ -1297,8 +1318,14 @@
     }
 .text-wrap {
   margin-bottom: 20px;
-  letter-spacing: 0.035rem;
+  letter-spacing: 0.035rem
 }
+@media(max-width: 767px){
+.text-wrap {
+    display: none
+}
+    
+  }
 .text-wrap-title {
     color: #222222;
     font-family: "Proxima Nova";
@@ -1327,7 +1354,8 @@
 @media(max-width: 767px){
 
   .text-wrap-mobile {
-      display: block
+      display: block;
+      width: 100%
   }
       
     }
@@ -1482,7 +1510,7 @@
 @media(max-width: 767px){
 
     .blog-img__picture {
-        margin-bottom: 100px
+        margin-bottom: 130px
     }
       }
 .blog-img__picture a {
@@ -1492,11 +1520,18 @@
         font-family: "Proxima";
         font-weight: bold;
         font-size: 1.0625rem;
-        text-decoration-line: none;
+        -webkit-text-decoration-line: none;
+                text-decoration-line: none;
         letter-spacing: 0.15875rem;
         position: relative;
-        z-index: 3;
+        z-index: 3
       }
+@media(max-width: 767px){
+
+      .blog-img__picture a {
+          top: 35px
+      }
+        }
 .blog-img__btn{
       position: absolute;
       left: -95px;
@@ -1512,7 +1547,7 @@
 @media(max-width: 767px){
 
     .blog-img__btn{
-        top: 105%;
+        top: 100%;
         left: 50%;
         margin-left: -100px
     }
@@ -1531,8 +1566,14 @@
         top: -3px;
         right: -10px;
         z-index: 1;
-        transition: all .3s;
+        transition: all .3s
       }
+@media(max-width: 767px){
+
+      .blog-img__btn::after {
+          top: 30px
+      }
+        }
 .blog-img img {
       width: 100%;
     }
@@ -1602,7 +1643,8 @@
       font-family: Gilroy;
       font-size: 1.1875rem;
       letter-spacing: 0.185rem;
-      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
       position: relative;
       padding-left: 35px;
       letter-spacing: 2.96px;
@@ -1643,7 +1685,8 @@
       font-family: Gilroy;
       font-size: 1.1875rem;
       letter-spacing: 0.185rem;
-      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
       position: relative;
       padding-left: 35px;
       letter-spacing: 2.96px;

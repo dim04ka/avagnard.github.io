@@ -30,6 +30,10 @@
       align-items: center;
     }
 
+    @media(max-width: 480px){
+      padding-bottom: 30px;
+    }
+
     &__gallery {
       width: 50%;
     }
@@ -146,6 +150,17 @@
     width: 382px;
     height: 376px;
     margin-right: 12px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../src/img/usluga/loop.png");
+      width: 37px;
+      height: 37px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
 
     @media(max-width: 1200px){
       margin-right: 0;
@@ -204,6 +219,11 @@
   margin-bottom: 20px;
   letter-spacing: 0.56px;
 
+  @media(max-width: 767px){
+    display: none;
+    
+  }
+
   &-title {
     color: #222222;
     font-family: "Proxima Nova";
@@ -234,6 +254,7 @@
 
     @media(max-width: 767px){
       display: block;
+      width: 100%;
       
     }
 

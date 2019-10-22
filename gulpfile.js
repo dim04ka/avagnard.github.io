@@ -8,6 +8,7 @@ const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const uglify = require('gulp-uglify');
 const fileinclude = require('gulp-file-include');
+const autoprefixer = require('gulp-autoprefixer');
 
 const processors = [
     require('postcss-import'),
@@ -27,6 +28,7 @@ gulp.task('pcss', (done)=> {
     return gulp
         .src('./src/css/*.pcss')
         .pipe(postcss(processors))
+        .pipe(autoprefixer())
         .pipe(rename({
             extname: ".css"
         }))

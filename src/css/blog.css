@@ -104,7 +104,7 @@
       position: relative;
 
       @media(max-width: 767px){
-        margin-bottom: 100px;
+        margin-bottom: 130px;
       }
 
       a {
@@ -118,6 +118,10 @@
         letter-spacing: 2.54px;
         position: relative;
         z-index: 3;
+
+        @media(max-width: 767px){
+          top: 35px;
+        }
       }
     }
 
@@ -132,7 +136,7 @@
       }
 
       @media(max-width: 767px){
-        top: 105%;
+        top: 100%;
         left: 50%;
         margin-left: -100px;
       }
@@ -153,6 +157,10 @@
         right: -10px;
         z-index: 1;
         transition: all .3s;
+
+        @media(max-width: 767px){
+          top: 30px;
+        }
       }
     }
 

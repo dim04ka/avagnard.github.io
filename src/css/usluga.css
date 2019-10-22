@@ -204,11 +204,6 @@
   margin-bottom: 20px;
   letter-spacing: 0.56px;
 
-  @media(max-width: 767px){
-    display: none;
-  }
-
-
   &-title {
     color: #222222;
     font-family: "Proxima Nova";

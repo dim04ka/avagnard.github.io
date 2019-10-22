@@ -248,7 +248,7 @@
   background-position: center top;
 
   @media(max-width: 1023px){
-    bottom: -115px;
+    bottom: -75px;
     left: -288px;
     transform: scale(0.7);
   }

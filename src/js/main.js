@@ -38,7 +38,15 @@ $(function(){
 })
 
 
-//
-$(function(){
 
-})
+  //paralax
+  function paralax(e) {
+	
+    var layer2 = document.querySelector(".car");
+    layer2.style.transform = "translateX("+e.clientX*10/100+"px)";
+		layer2.style.transform = "translateY("+e.clientY*50/1000+"px)";
+		
+  }
+	document.addEventListener('mousemove', paralax);
+	
+
